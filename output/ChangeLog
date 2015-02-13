@@ -1,0 +1,28 @@
+1.2.2.0    odict 2010/0713
+	* fix 修正了odict的符号表内容.
+1.1.1.0	    odict  2010/07/08
+    * fix:  修正了traverse中的bug.
+1.1.0.1     odict  2010/05/21
+    * add:  增加支持128位签名的接口
+1.0.6.0     odict  2008/01/11
+    * add:  增加一个比较2个只读字典是否完全相同(hash桶内元素顺序也需要相同)的接口
+1.0.5.0     odict  2007/12/03
+    * fix:  64位下load search dict 超过2G文件由于2个int相乘出的core
+    * fix:  读取search dict 改为分块读取
+1.0.4.1     odict  2007/10/10
+    * fix:  修改size_t类型输出为%zu
+1.0.4.0     odict  2007/09/28
+    * add:  新增对只读类型的写文件接口包括odb_save_search和odb_save_search_safely
+		* fix:  修复odb_search_get_hashnum中返回值得错误
+		* fix:  修改odb_add, odb_add里发现增加节点存在即退出，找到的空节点为第一个找到的
+1.0.3.0     odict  2007/08/23
+    *fix:   增加odb_save存储过程的检查和守护
+	*fix:   增加load过程的检查和守护
+1.0.2.0     odict  2007/05/25
+    *fix:   修复odb_add在添加删除节点时处理错误bug
+1.0.1.0	    odict  2007/05/10
+    * add:  新增adjust接口、访问hash节点数接口
+    * fix:  odb_save_safely对mv结果的判断导致的程序运行不畅
+    * fix:  可移植到64位机器上
+1.0.0.0     odict  2007/04/04
+    * create:  
